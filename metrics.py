@@ -76,8 +76,8 @@ def confusion_matrix_ad(true_labels, predicted_labels, num_classes, classes):
     sns.heatmap(conf_matrix, annot = True, fmt = 'd', cmap = 'Blues', cbar = True)
     plt.xlabel('Predicted Labels')
     plt.ylabel('True Labels')
-    plt.xticks(np.arange(num_classes), labels = classes, fontsize = 8)
-    plt.yticks(np.arange(num_classes), labels = classes, fontsize = 8)
+    plt.xticks(np.arange(num_classes) + 0.5, labels = classes, fontsize = 8)
+    plt.yticks(np.arange(num_classes) + 0.5, labels = classes, fontsize = 8)
     plt.title('Confusion Matrix')
     plt.show()
 
